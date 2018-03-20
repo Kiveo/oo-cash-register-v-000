@@ -29,7 +29,7 @@ class CashRegister
   def items
 
   end
-  
+
   def total
     @total
   end
