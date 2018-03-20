@@ -12,8 +12,8 @@ class CashRegister
     stuff
   end
 
-  def total 
+  def total
     @total
   end
-  
+
 end
