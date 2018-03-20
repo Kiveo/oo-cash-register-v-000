@@ -13,9 +13,9 @@ class CashRegister
   def add_item(title, price, quantity = 1.0)
     cart_price = price * quantity
     # puts "Added #{title} at price: #{price} x #{quantity}. old total: #{total}"
+    quantity.times { @cart << title }
     @total += cart_price
     # puts "Current total now: #{total}"
-    quantity.times { @cart << title }
   end
 
   def apply_discount
