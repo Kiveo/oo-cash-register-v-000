@@ -11,9 +11,9 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1.0)
-    cart = price * quantity
+    cart_price = price * quantity
     # puts "Added #{title} at price: #{price} x #{quantity}. old total: #{total}"
-    @total += cart
+    @total += cart_price
     # puts "Current total now: #{total}"
   end
 
@@ -25,6 +25,8 @@ class CashRegister
       "There is no discount to apply."
     end
   end
+
+  def items
 
   def total
     @total
