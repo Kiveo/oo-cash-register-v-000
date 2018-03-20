@@ -9,5 +9,5 @@ class CashRegister
   def dosomething
     stuff
   end
-  
+
 end
