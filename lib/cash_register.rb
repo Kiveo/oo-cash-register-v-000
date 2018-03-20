@@ -15,6 +15,7 @@ class CashRegister
     # puts "Added #{title} at price: #{price} x #{quantity}. old total: #{total}"
     @total += cart_price
     # puts "Current total now: #{total}"
+    @cart << title * quantity
   end
 
   def apply_discount
