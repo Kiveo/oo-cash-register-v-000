@@ -4,7 +4,7 @@ class CashRegister
   attr_accessor :discount
   attr_accessor :added_total
 
-  def initialize(discount = 0.0)
+  def initialize(discount = 1.0)
     @total = 0.0
     @added_total = 0.0
     @discount = discount
@@ -17,6 +17,10 @@ class CashRegister
     # puts "Current total now: #{total}"
   end
 
+  def apply_discount
+    @total = @total * discount
+  end
+  
   def total
     @total
   end
