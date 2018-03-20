@@ -11,7 +11,7 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1.0)
-    quantity.times do
+    quantity.to_i.times do
       @cart << title
     end
     cart_price = price * quantity
