@@ -22,7 +22,7 @@ class CashRegister
     if @discount != 1.0
       "After the discount, the total comes to $#{total.to_i}."
     else
-      "There is not discount to apply."
+      "There is no discount to apply."
     end
   end
 
