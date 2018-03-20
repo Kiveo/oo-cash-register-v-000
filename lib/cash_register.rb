@@ -1,13 +1,13 @@
 
 class CashRegister
-  attr_accessor :variable
+  attr_accessor :total
 
   def initialize
-    @variable = variable
+    @total = total
   end
 
   def dosomething
     stuff
   end
-
+  
 end
