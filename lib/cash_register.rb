@@ -12,8 +12,8 @@ class CashRegister
 
   def add_item(title, price, quantity = 1.0)
     cart = price * quantity
-    puts "Added #{title} at price: #{price} x #{quantity}. total: #{total}"
-    @total += price
+    puts "Added #{title} at price: #{price} x #{quantity}. old total: #{total}"
+    @total += cart
     puts "Current total now: #{total}"
   end
 
