@@ -4,7 +4,6 @@ class CashRegister
   attr_accessor :discount
   attr_accessor :cart
   attr_accessor :last_item_cost
-  attr_accessor :last_item_title
 
   def initialize(discount = 1.0)
     @total = 0.0
@@ -21,7 +20,6 @@ class CashRegister
     @total += cart_price
     # puts "Current total now: #{total}"
     @last_item_cost = cart_price
-    @last_item_title = title
   end
 
   def apply_discount
