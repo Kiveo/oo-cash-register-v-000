@@ -28,7 +28,7 @@ class CashRegister
   end
 
   def items
-
+    @cart
   end
 
   def total
