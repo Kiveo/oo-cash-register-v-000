@@ -11,9 +11,11 @@ class CashRegister
   end
 
   def add_item(title, price, quantity = 1.0)
+    quantity.times do 
+      @cart << title 
+    end
     cart_price = price * quantity
     # puts "Added #{title} at price: #{price} x #{quantity}. old total: #{total}"
-    # quantity.times { @cart << title }
     @total += cart_price
     # puts "Current total now: #{total}"
   end
